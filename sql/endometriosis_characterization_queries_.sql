@@ -1,7 +1,7 @@
 
+----ENDOMETRIOSIS PHENOTYPE CHARACTERIZATION QUERIES----
+
 ----NOTE: you will also need to manually update each cohort ID in the SQL code with the corresponding ID of either the endometriosis or comparison group cohort number as assigned when the cohorts are generated on your database instance.  @CDM_schema and @results_schema will need to be replaced in the SQL code with the names of these schemas in your OHDSI instance.----    
-
-
 
 
 ----TOTAL COUNTS----
