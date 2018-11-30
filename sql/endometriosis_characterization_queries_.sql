@@ -4,7 +4,8 @@
 /*NOTE: you will also need to manually update each COHORT_DEFINITION_ID in this SQL code with:
  1) the corresponding ID of either the endometriosis or comparison group cohort number 
  as assigned when the cohorts are generated on your database instance.  
- 2) @CDM_schema and @results_schema will need to be replaced in the SQL code with the names of these schemas in your OHDSI instance.*/    
+ 2) @CDM_schema and @results_schema will need to be replaced in the SQL code 
+ with the names of these schemas in your OHDSI instance.*/    
 
 
 ----TOTAL COUNTS----
