@@ -1,0 +1,19 @@
+Package: EndometriosisCharacterization
+Type: Package
+Title: Endometriosis Phenotype Characerization
+Version: 1.0.0
+Author: Christopher Knoll <cknoll1@its.jnj.com>
+  Mollie McKillop <mm4234@cumc.columbia.edu>
+Maintainer: Mollie McKillop <mm4234@cumc.columbia.edu>
+Description: This is the package for the OHDSI study "Endometriosis Phenotype Characterization Across Observational Health Databases"
+    In this study we want to understand the prevalence of signs and symptoms, treatments, and healthcare utilization patterns 
+  among endometriosis patients before diagnosis and relate these patterns to a comparison cohort of reproductive age women.
+Depends:
+    DatabaseConnector
+Imports:
+    SqlRender,
+    OhdsiRTools
+License: Apache 2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0

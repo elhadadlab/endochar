@@ -1,0 +1,4 @@
+cohortId,cohortName,cohortSql,shortName
+1,EndoCohort,EndoCohort.sql,endo
+2,ComparisonCohort,ComparisonCohort.sql,comparison
+
