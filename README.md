@@ -33,8 +33,8 @@ EndometriosisCharacterization::execute(connectionDetails = connectionDetails,
 
 3) Run the package to create the cohorts
 
-library(createCohorts.R)
+library(createCohorts)
 
 4) Run the package to generate the prevalence counts and output to study files.  
 
-library(main.R)
+library(main)
