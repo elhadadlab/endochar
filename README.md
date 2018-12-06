@@ -12,6 +12,29 @@ Running this study requires the following:
 - Access of the following tables: COHORT, DRUG_EXPOSURE, CONDITION_OCCURRENCE, VISIT_OCCURRENCE
 - Results submission of .csv files to Mollie McKillop at mm4234@cumc.columbia.edu 
  
+How to run:
+
+1) Set your database, server, port, user & password, this example assumes you have set your environment variables to the requried values.
+
+connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = Sys.getenv("dbms"),
+																																server = Sys.getenv("server"),
+																																port = as.numeric(Sys.getenv("port")),
+																																user = Sys.getEnv("username"),
+																																password = Sys.getEnv("password")
+																																)
+
+2) Initialize tables
+
+EndometriosisCharacterization::init(connectionDetails = connectionDetails, "{StudySchema}", tablePrefix = "endo_")
+
+EndometriosisCharacterization::execute(connectionDetails = connectionDetails,
+																			 createCohorts = TRUE,
 
 
+3) Run the package to create the cohorts
 
+library(createCohorts.R)
+
+4) Run the package to generate the prevalence counts and output to study files.  
+
+library(main.R)
