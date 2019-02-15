@@ -21,20 +21,12 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = Sys.geten
 																																port = as.numeric(Sys.getenv("port")),
 																																user = Sys.getEnv("username"),
 																																password = Sys.getEnv("password")
-																																)
+																														
 
-2) Initialize tables
-
-EndometriosisCharacterization::init(connectionDetails = connectionDetails, "{StudySchema}", tablePrefix = "endo_")
-
-EndometriosisCharacterization::execute(connectionDetails = connectionDetails,
-																			 createCohorts = TRUE,
-
-
-3) Run the package to create the cohorts
+2) Run the package to create the cohorts
 
 library(createCohorts)
 
-4) Run the package to generate the prevalence counts and output to study files.  
+3) Run the package to generate the prevalence counts and output to study files.  
 
 library(main)
